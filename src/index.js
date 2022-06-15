@@ -3,5 +3,5 @@ export const editorReady = async (
     token,
     { firstInstall },
 ) => {
-    console.log('im ready', editorSDK)
+    console.log('im ready newwww', editorSDK)
 };

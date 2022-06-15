@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/kobiza/spacing-plugin#readme",
   "devDependencies": {
+    "http-serve": "^1.0.1",
     "webpack": "^5.73.0",
     "webpack-cli": "^4.10.0"
   }

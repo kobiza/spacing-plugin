@@ -26,7 +26,7 @@ return /******/ (() => { // webpackBootstrap
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"editorReady\": () => (/* binding */ editorReady)\n/* harmony export */ });\nconst editorReady = async (\n    editorSDK,\n    token,\n    { firstInstall },\n) => {\n    console.log('im ready', editorSDK)\n};\n\n\n//# sourceURL=webpack://spacing-plugin/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"editorReady\": () => (/* binding */ editorReady)\n/* harmony export */ });\nconst editorReady = async (\n    editorSDK,\n    token,\n    { firstInstall },\n) => {\n    console.log('im ready newwww', editorSDK)\n};\n\n\n//# sourceURL=webpack://spacing-plugin/./src/index.js?");
 
 /***/ })
 

@@ -3,5 +3,12 @@ export const editorReady = async (
     token,
     { firstInstall },
 ) => {
-    console.log('im ready newwww', editorSDK)
+    console.log('spacing-editorReady', editorSDK)
+
+    editorSDK.editor.openSidePanel('TOKEN', {
+        url: `./index.html`,
+        width: 233,
+        showOverlay: false,
+        displayAboveModals: true,
+    });
 };

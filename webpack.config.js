@@ -6,13 +6,14 @@ var BUILD_DIR = path.resolve(__dirname, 'dist');
 
 var config = {
     mode: 'development',
-    entry: [
-        './src/index.js'
-    ],
+    entry: {
+        editor: './src/editor.js',
+        managerPanel: './src/managerPanel.js'
+    },
     output: {
         path: BUILD_DIR,
         publicPath: '/dist',
-        filename: 'bundle.js',
+        filename: '[name].js',
         libraryTarget: 'umd',
     }
 };

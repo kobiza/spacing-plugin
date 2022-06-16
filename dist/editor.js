@@ -20,13 +20,13 @@ return /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
+/***/ "./src/editor.js":
+/*!***********************!*\
+  !*** ./src/editor.js ***!
+  \***********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"editorReady\": () => (/* binding */ editorReady)\n/* harmony export */ });\nconst editorReady = async (\n    editorSDK,\n    token,\n    { firstInstall },\n) => {\n    console.log('spacing-editorReady', editorSDK)\n\n    editorSDK.editor.openSidePanel('TOKEN', {\n        url: `./index.html`,\n        width: 233,\n        showOverlay: false,\n        displayAboveModals: true,\n    });\n};\n\n\n//# sourceURL=webpack://spacing-plugin/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"editorReady\": () => (/* binding */ editorReady),\n/* harmony export */   \"getEditorData\": () => (/* binding */ getEditorData)\n/* harmony export */ });\nlet _editorSDK\nlet _token\n\nconst editorReady = async (\n    editorSDK,\n    token,\n) => {\n    _editorSDK = editorSDK\n    _token = token\n\n    console.log('spacing-editorReady', editorSDK)\n\n    editorSDK.editor.openSidePanel(token, {\n        url: `./managerPanel.html`,\n        width: 233,\n        showOverlay: false,\n        displayAboveModals: true,\n        initialData: {\n            token\n        }\n    });\n};\n\nconst getEditorData = () => {\n    return {\n        editorSDK: _editorSDK,\n        token: _token,\n    }\n}\n\n\n//# sourceURL=webpack://spacing-plugin/./src/editor.js?");
 
 /***/ })
 
@@ -70,7 +70,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
 /******/ 	var __webpack_exports__ = {};
-/******/ 	__webpack_modules__["./src/index.js"](0, __webpack_exports__, __webpack_require__);
+/******/ 	__webpack_modules__["./src/editor.js"](0, __webpack_exports__, __webpack_require__);
 /******/ 	
 /******/ 	return __webpack_exports__;
 /******/ })()
